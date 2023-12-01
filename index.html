@@ -32,5 +32,23 @@
             <div id="thank_you_msg"></div>
         </form>
     </div>
+    <script>
+        $('#contactForm').on('submit',function(e){
+			$('#btn').val('Please wait...');
+			$('#btn').attr('disabled',true);
+			jQuery.ajax({
+				url:'submit.php',
+				type:'post',
+				data:$('#contactForm').serialize(),
+				$:function(result){
+					$('#thank_you_msg').html('Thank you');
+					$('#contactForm')['0'].reset();
+					$('#btn').val('Submit Now');
+					$('#btn').attr('disabled',false);
+				}
+			});
+			e.preventDefault();
+		});
+    </script>
 </body>
 </html>
