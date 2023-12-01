@@ -85,3 +85,6 @@ body{
 .signup-form form a:hover{
     text-decoration: underline;
 }
+#thank_you_msg{
+    color:red;
+}

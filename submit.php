@@ -1,4 +1,5 @@
 <?php
+sleep(3);
 include('database.php');
 $name=$_POST['name'];
 $username=$_POST['username'];
