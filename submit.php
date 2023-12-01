@@ -1,5 +1,5 @@
 <?php 
-include('db.php');
+include('database.php');
 $name=$_POST['name'];
 $username=$_POST['username'];
 $mobile=$_POST['mobile'];

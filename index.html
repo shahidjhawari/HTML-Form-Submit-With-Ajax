@@ -36,7 +36,7 @@
         $('#contactForm').on('submit',function(e){
 			$('#btn').val('Please wait...');
 			$('#btn').attr('disabled',true);
-			jQuery.ajax({
+			$.ajax({
 				url:'submit.php',
 				type:'post',
 				data:$('#contactForm').serialize(),
